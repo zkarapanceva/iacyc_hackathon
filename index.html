@@ -1,5 +1,46 @@
 <!doctype html>
 <html lang="en">
+  <style>
+/* ---------- organisation logos ---------- */
+.orgs{display:flex; align-items:center; gap:22px; flex-wrap:wrap; padding:0 0 30px}
+.orgs img{height:54px; width:auto; display:block}
+.orgs img:nth-of-type(2){height:34px}
+.orgs .sep{width:1px; height:36px; background:var(--rule)}
+@media (max-width:520px){
+  .orgs img{height:42px}
+  .orgs img:nth-of-type(2){height:27px}
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .orgs img{background:#fff; padding:6px 10px; border-radius:2px}
+}
+:root[data-theme="dark"] .orgs img{background:#fff; padding:6px 10px; border-radius:2px}
+
+/* ---------- organising committee ---------- */
+.people{display:grid; gap:18px; margin:26px 0 8px}
+@media (min-width:760px){.people{grid-template-columns:repeat(3,1fr)}}
+.person{border:1px solid var(--rule); background:var(--surface); display:flex; flex-direction:column; padding-bottom:22px}
+.person img{
+  width:100%; aspect-ratio:4/5; object-fit:cover; display:block;
+  border-bottom:1px solid var(--rule);
+  filter:grayscale(1) contrast(1.04); transition:filter .25s ease;
+}
+.person:hover img{filter:grayscale(0)}
+.person .body{padding:18px 20px 0}
+.person .role{font-family:var(--f-mono); font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 6px}
+.person h3{margin:0 0 8px; font-size:1.05rem}
+.person p{font-size:.88rem; color:var(--ink-2); line-height:1.5; margin:0}
+.person .aff{font-family:var(--f-mono); font-size:.68rem; color:var(--ink-3); margin-top:11px; letter-spacing:.04em}
+
+@media print {
+  .orgs{padding-bottom:5mm}
+  .orgs img{height:14mm}
+  .orgs img:nth-of-type(2){height:9mm}
+  .people{gap:4mm}
+  .person{break-inside:avoid; padding-bottom:4mm}
+  .person img{aspect-ratio:1/1; filter:grayscale(1)}
+  .person .body{padding:3mm 4mm 0}
+}
+</style>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -456,11 +497,17 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
     <li><a href="#awards">Awards</a></li>
     <li><a href="#rules">House rules</a></li>
     <li><a href="#faq">Questions</a></li>
+    <li><a href="#committee">Organising committee</a></li>
   </ol>
 </aside>
 
 <main>
 <header class="masthead">
+  <div class="orgs">
+    <img src="ukim.png" alt="Ss. Cyril and Methodius University in Skopje">
+    <span class="sep"></span>
+    <img src="finki.png" alt="Faculty of Computer Science and Engineering, FINKI">
+  </div>
   <p class="eyebrow">IACyC 2026<span class="dot">·</span>CyberMACS Student Hackathon</p>
   <h1>Defend What<br>Matters</h1>
   <p class="deck">One city. Three tracks. Five days to build something that defends it — and one morning to prove it works.</p>
@@ -944,7 +991,47 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
   <details><summary>What if the demo breaks during our presentation?</summary><p>Play the backup recording and keep talking. Judges have seen live demos fail since the invention of live demos; the recording costs you nothing. Not having one costs you your Implementation score.</p></details>
   <details><summary>Is the Exchange compulsory?</summary><p>Expected, not scored. Nobody loses points for missing it — you just lose the answers, and the chance at the Best Collaborators certificate.</p></details>
 </section>
+<section id="committee">
+  <span class="snum">Who runs this</span>
+  <h2>Organising committee</h2>
+  <p class="measure">
+    The hackathon is organised by the CyberMACS team at the Faculty of Computer Science and
+    Engineering, Ss. Cyril and Methodius University in Skopje. Find any of us during the week.
+  </p>
+  <div class="people">
 
+    <div class="person">
+      <img src="mila.dodevska.jpg" alt="Portrait of Mila Dodevska">
+      <div class="body">
+        <p class="role">Role here</p>
+        <h3>Mila Dodevska</h3>
+        <p>One or two sentences.</p>
+        <p class="aff">FINKI, UKIM</p>
+      </div>
+    </div>
+
+    <div class="person">
+      <img src="zivko.atanaskoski.jpg" alt="Portrait of Živko Atanaskoski">
+      <div class="body">
+        <p class="role">Role here</p>
+        <h3>Živko Atanaskoski</h3>
+        <p>One or two sentences.</p>
+        <p class="aff">FINKI, UKIM</p>
+      </div>
+    </div>
+
+    <div class="person">
+      <img src="zorica.karapancheva.jpeg" alt="Portrait of Zorica Karapancheva">
+      <div class="body">
+        <p class="role">Role here</p>
+        <h3>Zorica Karapancheva</h3>
+        <p>One or two sentences.</p>
+        <p class="aff">FINKI, UKIM</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 <footer class="end">
   Defend What Matters · CyberMACS Student Hackathon<br>
   IACyC 2026 · Kadir Has University, Cibali Campus, Istanbul
