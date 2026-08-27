@@ -3,12 +3,12 @@
   <style>
 /* ---------- organisation logos ---------- */
 .orgs{display:flex; align-items:center; gap:22px; flex-wrap:wrap; padding:0 0 30px}
-.orgs img{height:54px; width:auto; display:block}
-.orgs img:nth-of-type(2){height:34px}
+.orgs img{height:78px; width:auto; display:block}
+.orgs img:nth-of-type(2){height:52px}
 .orgs .sep{width:1px; height:36px; background:var(--rule)}
 @media (max-width:520px){
-  .orgs img{height:42px}
-  .orgs img:nth-of-type(2){height:27px}
+  .orgs img{height:58px}
+  .orgs img:nth-of-type(2){height:38px}
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]) .orgs img{background:#fff; padding:6px 10px; border-radius:2px}
@@ -22,9 +22,7 @@
 .person img{
   width:100%; aspect-ratio:4/5; object-fit:cover; display:block;
   border-bottom:1px solid var(--rule);
-  filter:grayscale(1) contrast(1.04); transition:filter .25s ease;
 }
-.person:hover img{filter:grayscale(0)}
 .person .body{padding:18px 20px 0}
 .person .role{font-family:var(--f-mono); font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 6px}
 .person h3{margin:0 0 8px; font-size:1.05rem}
@@ -994,18 +992,20 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
 <section id="committee">
   <span class="snum">Who runs this</span>
   <h2>Organising committee</h2>
-  <p class="measure">
-    The hackathon is organised by the CyberMACS team at the Faculty of Computer Science and
-    Engineering, Ss. Cyril and Methodius University in Skopje. Find any of us during the week.
+    <p class="measure">
+    The hackathon is organised by three PhD students and teaching assistants at the Faculty of
+    Computer Science and Engineering, Ss. Cyril and Methodius University in Skopje. Between us we
+    teach and research across the areas this hackathon covers, and we have been on your side of the
+    table recently enough to remember what a week like this feels like. We will be in the room for
+    the whole of it — during the build days, at the Exchange, and on Saturday morning. Ask us
+    anything, including the questions you think are too basic to ask.
   </p>
   <div class="people">
 
     <div class="person">
       <img src="mila.dodevska.jpg" alt="Portrait of Mila Dodevska">
       <div class="body">
-        <p class="role">Role here</p>
         <h3>Mila Dodevska</h3>
-        <p>One or two sentences.</p>
         <p class="aff">FINKI, UKIM</p>
       </div>
     </div>
@@ -1013,9 +1013,7 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
     <div class="person">
       <img src="zivko.atanaskoski.jpg" alt="Portrait of Živko Atanaskoski">
       <div class="body">
-        <p class="role">Role here</p>
         <h3>Živko Atanaskoski</h3>
-        <p>One or two sentences.</p>
         <p class="aff">FINKI, UKIM</p>
       </div>
     </div>
@@ -1023,9 +1021,7 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
     <div class="person">
       <img src="zorica.karapancheva.jpeg" alt="Portrait of Zorica Karapancheva">
       <div class="body">
-        <p class="role">Role here</p>
         <h3>Zorica Karapancheva</h3>
-        <p>One or two sentences.</p>
         <p class="aff">FINKI, UKIM</p>
       </div>
     </div>
