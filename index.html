@@ -10,10 +10,6 @@
   .orgs img{height:58px}
   .orgs img:nth-of-type(2){height:38px}
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]) .orgs img{background:#fff; padding:6px 10px; border-radius:2px}
-}
-:root[data-theme="dark"] .orgs img{background:#fff; padding:6px 10px; border-radius:2px}
 
 /* ---------- organising committee ---------- */
 .people{display:grid; gap:18px; margin:26px 0 8px}
@@ -44,7 +40,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Defend What Matters — CyberMACS Student Hackathon, IACyC 2026. Participant brief.">
 <meta property="og:title" content="Defend What Matters">
-<meta property="og:description" content="CyberMACS Student Hackathon at IACyC 2026 — one city, three tracks, five days.">
+<meta property="og:description" content="CyberMACS Student Hackathon at IACyC 2026 — one city, three tracks, three days.">
 <meta property="og:type" content="article">
 <title>Defend What Matters</title>
 <style>
@@ -228,24 +224,7 @@
   --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
   --f-body:"Newsreader",Georgia,"Times New Roman",serif;
   --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --ground:#0C151B; --surface:#121D25; --surface-2:#19262F;
-    --ink:#E3EBF0; --ink-2:#9DAEB9; --ink-3:#788C99;
-    --rule:#25333D; --rule-strong:#3B4D59;
-    --a:#63ACD1; --b:#A695DE; --c:#D89C5D; --signal:#F0785C;
-    --a-wash:#142C3A; --b-wash:#221E38; --c-wash:#31251A; --signal-wash:#34201C;
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
-  }
-}
-:root[data-theme="dark"]{
-  --ground:#0C151B; --surface:#121D25; --surface-2:#19262F;
-  --ink:#E3EBF0; --ink-2:#9DAEB9; --ink-3:#788C99;
-  --rule:#25333D; --rule-strong:#3B4D59;
-  --a:#63ACD1; --b:#A695DE; --c:#D89C5D; --signal:#F0785C;
-  --a-wash:#142C3A; --b-wash:#221E38; --c-wash:#31251A; --signal-wash:#34201C;
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  color-scheme: light;
 }
 
 *{box-sizing:border-box}
@@ -325,7 +304,7 @@ li::marker{color:var(--ink-3)}
 
 /* ---------- week strip ---------- */
 .week{display:grid; gap:2px; margin:26px 0 8px; background:var(--rule); border:1px solid var(--rule)}
-@media (min-width:820px){.week{grid-template-columns:repeat(5,1fr)}}
+@media (min-width:820px){.week{grid-template-columns:repeat(4,1fr)}}
 .day{background:var(--surface); padding:18px 18px 20px; display:flex; flex-direction:column}
 .day.key{background:var(--a-wash)}
 .day .dd{font-family:var(--f-mono); font-size:.66rem; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); margin:0 0 8px}
@@ -482,12 +461,12 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
   <p class="index-title">Contents</p>
   <ol>
     <li><a href="#glance">At a glance</a></li>
-    <li><a href="#week">The week</a></li>
+    <li><a href="#week">The three days</a></li>
     <li><a href="#setting">The setting</a></li>
     <li><a href="#tracks">Three tracks</a></li>
-    <li><a href="#topics">Where your topic fits</a></li>
+    <li><a href="#topics">Choosing your topic</a></li>
     <li><a href="#build">What you build</a></li>
-    <li><a href="#existing">Your working group project</a></li>
+    <li><a href="#existing">Arriving with an idea</a></li>
     <li><a href="#teams">Teams</a></li>
     <li><a href="#exchange">The Exchange</a></li>
     <li><a href="#runsheet">Saturday</a></li>
@@ -508,11 +487,12 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
   </div>
   <p class="eyebrow">IACyC 2026<span class="dot">·</span>CyberMACS Student Hackathon</p>
   <h1>Defend What<br>Matters</h1>
-  <p class="deck">One city. Three tracks. Five days to build something that defends it — and one morning to prove it works.</p>
+  <p class="deck">One city. Three tracks. Three days to build something that defends it — and one morning to prove it works.</p>
   <div class="meta">
-    <div><b>Kick-off</b>Tue 15 Sept</div>
-    <div><b>The Exchange</b>Wed 16 Sept, evening</div>
+    <div><b>Kick-off</b>Thu 17 Sept</div>
+    <div><b>The Exchange</b>Fri 18 Sept</div>
     <div><b>Showcase</b>Sat 19 Sept, 09:00–14:00</div>
+    <div><b>For</b>CyberMACS, third intake</div>
     <div><b>Venue</b>Kadir Has University, Cibali</div>
   </div>
 </header>
@@ -521,46 +501,43 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
   <span class="snum">Start here</span>
   <h2>At a glance</h2>
   <div class="glance">
-    <div><p class="k">Build time</p><p class="v">Tue 15 – Sat 19<small>Your own hours, plus Saturday morning.</small></p></div>
-    <div><p class="k">Teams</p><p class="v">Your working group<small>Already formed teams and possible reforming with approval.</small></p></div>
-    <div><p class="k">Mid-week</p><p class="v">The Exchange<small>One hour. Ten problems. Everyone helps.</small></p></div>
+    <div><p class="k">Build time</p><p class="v">Thu 17 – Sat 19<small>Your own hours, plus Saturday morning.</small></p></div>
+    <div><p class="k">Teams</p><p class="v">Formed on Thursday<small>Six or seven teams, three to five people each.</small></p></div>
+    <div><p class="k">Friday</p><p class="v">The Exchange<small>One hour. Every group's hardest problem.</small></p></div>
     <div><p class="k">Saturday</p><p class="v">09:00 – 14:00<small>Finish, prepare, present, decide.</small></p></div>
     <div><p class="k">Judged on</p><p class="v">Idea 40 · Build 25<small>Presentation 20 · Impact 15.</small></p></div>
     <div><p class="k">Prize</p><p class="v">One winner<small>Plus certificates per track.</small></p></div>
   </div>
   <p style="font-family:var(--f-mono); font-size:.75rem; color:var(--ink-3); margin-top:14px; max-width:var(--measure)">
-    This is a <strong>build</strong> event, not a capture-the-flag. You are not breaking into anything.
-    You are making something that defends someone.
+    For CyberMACS students of the third intake. This is a <strong>build</strong> event, not a
+    capture-the-flag — you are not breaking into anything, you are making something that defends someone.
   </p>
 </section>
 
 <section id="week">
   <span class="snum">Shape of it</span>
-  <h2>The week</h2>
+  <h2>The three days</h2>
   <p class="measure">
-    The hackathon runs across the whole conference week: you leave the Tuesday session with a
-    direction, you build in your own time, and Saturday is the finishing sprint and the showcase.
+    The hackathon runs across the last three days of the conference: you leave Thursday's session with
+    a direction, you build in your own time around the programme, and Saturday is the finishing sprint
+    and the showcase. Thursday and Friday start times will be confirmed on site — they depend on the
+    conference schedule.
   </p>
   <div class="week">
     <div class="day key">
-      <p class="dd">Tue 15 Sept</p>
+      <p class="dd">Thu 17 Sept</p>
       <p class="dt">Kick-off</p>
-      <p>Theme, tracks, rules, judging. You leave with a track chosen and a one-sentence idea.</p>
+      <p>Theme, tracks, rules, judging. Idea pitches, then teams form. You leave in a team, with a track chosen and one sentence to build.</p>
     </div>
     <div class="day">
-      <p class="dd">Wed 16 Sept</p>
+      <p class="dd">Thu – Fri</p>
       <p class="dt">Build</p>
-      <p>Your own hours, around the conference programme. Post your blocker by 17:00.</p>
+      <p>Your own hours, around the conference programme. Talk to the practitioners in the building — they are the users you're designing for.</p>
     </div>
     <div class="day key">
-      <p class="dd">Wed 16, evening</p>
+      <p class="dd">Fri 18 Sept</p>
       <p class="dt">The Exchange</p>
-      <p>One hour. Every team puts up a problem; every other team helps. Helper points awarded.</p>
-    </div>
-    <div class="day">
-      <p class="dd">Thu 17 – Fri 18</p>
-      <p class="dt">Build</p>
-      <p>Conference days. Talk to the practitioners in the building — they are the users you're designing for.</p>
+      <p>One hour. Every group puts up a problem; every other group helps. Helper points awarded.</p>
     </div>
     <div class="day key">
       <p class="dd">Sat 19 Sept</p>
@@ -599,8 +576,8 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
   <span class="snum">Choose one</span>
   <h2>Three tracks</h2>
   <p class="measure">
-    Pick the track your project belongs to at the Tuesday session. You can switch up to <strong>Thursday
-    18:00</strong>. Tracks exist so that judging compares like with like and so the showcase has a shape —
+    Pick your track at the Thursday session. You can switch up to the start of the Exchange on
+    Friday. Tracks exist so that judging compares like with like and so the showcase has a shape —
     they are not three separate competitions, and the same scoring sheet applies to all of them.
   </p>
   <div class="tracks">
@@ -662,11 +639,12 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
 </section>
 
 <section id="topics">
-  <span class="snum">Your project already fits</span>
-  <h2>Where your working group topic lands</h2>
+  <span class="snum">Pick your angle</span>
+  <h2>Choosing your topic</h2>
   <p class="measure">
-    Every topic on the conference list has a home. If your working group is already running under
-    one of these, you do not need a new idea — you need a CyberCity defender and a track.
+    You are inventing a project rather than continuing one, so this is the place to start. Every topic
+    below comes from the conference's own list. Find the one closest to what you want to work on, then
+    use the right-hand column to turn it into something a team could actually build in three days.
   </p>
   <div class="tw">
     <table>
@@ -682,7 +660,7 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
         <tr><td class="what">Reverse Engineering</td><td><span class="pill a">A</span></td><td>Turn one sample into a detection rule the city could actually deploy tomorrow.</td></tr>
         <tr><td class="what">Secure Development Life Cycles</td><td><span class="pill a">A</span></td><td>A threat-modelling artefact a three-person supplier would genuinely complete.</td></tr>
         <tr><td class="what">Supply Chain Security</td><td><span class="pill a">A</span></td><td>Two thousand suppliers, one hospital network. Which of them can reach it?</td></tr>
-        <tr><td class="what">Advanced Cybersecurity Topics</td><td><span class="pill any">Any</span></td><td>Bring it. Name the defender, pick the nearest track, tell us at the Tuesday session.</td></tr>
+        <tr><td class="what">Advanced Cybersecurity Topics</td><td><span class="pill any">Any</span></td><td>Bring it. Name the defender, pick the nearest track, tell us at the Thursday session.</td></tr>
       </tbody>
     </table>
   </div>
@@ -692,13 +670,13 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
   <span class="snum">Expectations</span>
   <h2>What you build</h2>
 
-  <h3>One capability, working. Not a tour of the system.</h3>
+  <h3>One capability, working. Not a system.</h3>
   <p class="measure">
-    The whole project is judged, but five minutes is nowhere near enough to show all of it. Before you
-    plan the presentation, write one sentence: <em>"Our project lets [who] [do what] when [what
-    happens]."</em> If that sentence contains the word "and", cut it in half and pick the better half —
-    that half is what you demo. Groups that choose one thing and show it working land. Groups that tour
-    every feature spend Saturday morning demoing a login screen.
+    Three days around a full conference programme is enough to build one thing properly. It is not
+    enough to build a platform. Before you write a line of code, write one sentence: <em>"Our project
+    lets [who] [do what] when [what happens]."</em> If that sentence contains the word "and", cut it in
+    half and pick the better half. Groups that choose one thing and get it working land. Groups that
+    chase every feature spend Saturday morning demoing a login screen.
   </p>
 
   <div class="rule-box">
@@ -728,59 +706,63 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
 </section>
 
 <section id="existing">
-  <span class="snum">Encouraged</span>
-  <h2>Continuing your working group project</h2>
+  <span class="snum">Before Thursday</span>
+  <h2>Arriving with an idea</h2>
   <p class="measure">
-    Your working group project is the natural place to start, and we would far rather you took it
-    further than abandoned it for something you can only half-build in a week. Continuing is the
-    expected route, not a fallback.
+    Nobody is continuing existing coursework here, and nobody is in a team yet. Both of those things
+    get settled on Thursday — but only well if people turn up having thought about it. Three days is
+    enough to build something real, provided the room is not still deciding what to build on Friday
+    night.
+  </p>
+
+  <h3>Come to Thursday with</h3>
+  <ul class="measure">
+    <li><strong>An idea you would want to spend three days on.</strong> It does not need to be worked out. A topic from the list above and someone in CyberCity you want to defend is enough.</li>
+    <li><strong>A willingness to drop it.</strong> Not every idea will find a team, and joining someone else's better idea is not losing. The strongest teams are usually built around the idea, not the friendships.</li>
+    <li><strong>Nothing built.</strong> There is no advantage in arriving with working code, and no rule against it either. What you show on Saturday is what counts.</li>
+  </ul>
+
+  <h3>What happens at the session</h3>
+  <p class="measure">
+    Anyone with an idea pitches it in about a minute — what it is, who it defends, why it matters.
+    Then teams form around the ideas people actually want to build, and each team leaves with a track
+    and a one-sentence scope. If you have no idea of your own, come anyway and join one; if you have
+    three, pitch the best one.
   </p>
 
   <div class="rule-box">
     <span class="lbl">How this is scored</span>
-    <p><strong>The whole project is judged</strong> — everything you present on Saturday, not only the
-    part you added during the hackathon week. There is no baseline to declare and nothing to measure
-    against. Bring the strongest version of the work you have, and show us what it does.</p>
+    <p>Judges score what you present on Saturday, taken as a whole. Whose idea it originally was, and
+    when you started, are not part of it. Bring the strongest version of what your team has built.</p>
   </div>
-
-  <p class="measure">
-    Every group arrives with a project behind it, so this puts everyone on the same footing. What it
-    changes is where the week is best spent: on the capability that is still missing, the demo that
-    proves the thing works, and the five minutes that explain why any of it matters. Those are the
-    three places a good project wins or loses on Saturday.
-  </p>
-
-  <p class="measure">
-    Starting something entirely new instead is allowed. Tell us at the kick-off if you do — same
-    scoring sheet, and the jury will know what you took on.
-  </p>
 </section>
 
 <section id="teams">
   <span class="snum">Logistics</span>
   <h2>Teams</h2>
   <ul class="measure">
-    <li><strong>Your working group is your hackathon team</strong> by default. You don't need to do anything to keep it.</li>
-    <li><strong>Re-forming is possible, with approval.</strong> If you want to leave, merge or split a group, talk to us by <strong>Thursday 17 September, 12:00</strong> and we'll agree it with you and the groups affected.</li>
-    <li>Two to five people. Solo entries aren't accepted — presenting as a team is part of what's assessed.</li>
+    <li><strong>Teams form at the kick-off on Thursday</strong>, around the ideas pitched there. You do not need to arrive with a team, and you do not need to sort this out in advance.</li>
+    <li><strong>Three to five people.</strong> We expect six or seven teams in total. Solo entries aren't accepted — presenting as a team is part of what's assessed.</li>
+    <li><strong>Already know who you want to work with?</strong> That's fine — turn up together and say so. Nobody will be split up.</li>
+    <li><strong>Changing team afterwards</strong> is possible up to the Exchange on Friday. Tell us, so both teams know where they stand.</li>
     <li>Every member must be present on Saturday to be named on an award.</li>
   </ul>
 </section>
 
 <section id="exchange">
-  <span class="snum">Wednesday evening</span>
+  <span class="snum">Friday</span>
   <h2>The Exchange</h2>
   <p class="measure">
-    One hour, mid-week, where every team puts its hardest current problem on the wall and every other
-    team helps solve it. It is the opposite of a competition, and it happens two days before one — which
-    is exactly the point. Ten teams in a room have solved more problems than any of you have met.
+    One hour on Friday, where every group puts its hardest current problem on the wall and every other
+    group helps solve it. It is the opposite of a competition, and it happens the day before one — which
+    is exactly the point. Six or seven groups in a room have hit more walls than any one of you has.
   </p>
 
-  <h4>Before you arrive — by Wed 17:00</h4>
+  <h4>Before you arrive</h4>
   <p class="measure">
-    Each team posts <strong>one challenge</strong>, in two sentences maximum. Make it a real blocker, not a polite one. <em>"We can't get the model to
-    run on the conference wifi"</em> is a better post than <em>"we are exploring approaches to
-    detection."</em> Vague problems get vague help.
+    Each group brings <strong>one challenge</strong>, in two sentences maximum. Make it a real blocker,
+    not a polite one. <em>"We can't get the model to run on the conference wifi"</em> is a better
+    problem than <em>"we are exploring approaches to detection."</em> Vague problems get vague help.
   </p>
 
   <h4>The hour itself</h4>
@@ -788,19 +770,19 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
     <table>
       <thead><tr><th style="width:96px">Minutes</th><th style="width:190px">Round</th><th>What happens</th></tr></thead>
       <tbody>
-        <tr><td class="t">00–05</td><td class="what">Setup</td><td>Ten challenges on ten sheets around the room, one per team. Rules in one minute.</td></tr>
-        <tr><td class="t">05–20</td><td class="what">Silent exchange</td><td>Everyone walks the room and writes answers, leads, links and warnings on other teams' sheets. No talking. <strong>Each team must leave a written response on at least three other sheets</strong>, signed with your team name.</td></tr>
-        <tr><td class="t">20–38</td><td class="what">Ninety seconds each</td><td>Each team, in turn: read your challenge, read the single best answer you received, and make one open ask of the room.</td></tr>
-        <tr><td class="t">38–48</td><td class="what">Open floor</td><td>The two or three problems nobody cracked. Whole room, out loud.</td></tr>
-        <tr><td class="t">48–55</td><td class="what">Points</td><td>Each team gets <strong>three tokens</strong> to place on the responses that actually helped them. You cannot vote for your own team, and you can't put all three on one response.</td></tr>
-        <tr><td class="t">55–60</td><td class="what">Tally &amp; close</td><td>Helper points read out. Standings posted. Everyone leaves with three things to try.</td></tr>
+        <tr><td class="t">00–05</td><td class="what">Setup</td><td>One sheet per group around the room, each with that group's challenge at the top. Rules in one minute.</td></tr>
+        <tr><td class="t">05–22</td><td class="what">Silent exchange</td><td>Everyone walks the room and writes answers, leads, links and warnings on other groups' sheets. No talking. <strong>Each group must leave a written response on at least three other sheets</strong>, signed with your group name.</td></tr>
+        <tr><td class="t">22–34</td><td class="what">Ninety seconds each</td><td>Each group, in turn: read your challenge, read the single best answer you received, and make one open ask of the room.</td></tr>
+        <tr><td class="t">34–46</td><td class="what">Open floor</td><td>The two or three problems nobody cracked. Whole room, out loud.</td></tr>
+        <tr><td class="t">46–54</td><td class="what">Points</td><td>Each group gets <strong>three tokens</strong> to place on the responses that actually helped them. You cannot vote for your own group, and you can't put all three on one response.</td></tr>
+        <tr><td class="t">54–60</td><td class="what">Tally &amp; close</td><td>Helper points read out. Standings posted. Everyone leaves with three things to try.</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="note">
     <p><strong>What helper points are worth.</strong> They do not add to your hackathon score — the jury
-    scores the work, not the room. They do two things: they break ties on Saturday, and the team with
+    scores the work, not the room. They do two things: they break ties on Saturday, and the group with
     the most helper points receives the <strong>Best Collaborators</strong> certificate at the awards.</p>
     <p style="margin-bottom:0">Attendance is expected but not scored. Nobody loses anything by missing
     it, except the answers.</p>
@@ -811,7 +793,7 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
   <span class="snum">Saturday 19 September</span>
   <h2>How the morning runs</h2>
   <p class="measure">
-    Four phases. The hard switch at 10:30 is the one to plan around: at that point you stop building,
+    Four phases. The hard switch at 10:50 is the one to plan around: at that point you stop building,
     whatever state you're in, and start building the presentation instead.
   </p>
   <div class="tw">
@@ -821,22 +803,20 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
         <tr><td class="t">08:45</td><td class="what">Doors open</td><td>Coffee, find your table, get onto the network, plug in.</td></tr>
         <tr><td class="t">09:00</td><td class="what">Welcome</td><td>Ten minutes. How the morning runs, and the order of presentations. No new information.</td></tr>
         <tr class="phase"><td colspan="3">Phase 1 · Finishing sprint</td></tr>
-        <tr><td class="t">09:10</td><td class="what">Build</td><td>Eighty minutes to close whatever is still open. Mentors on the floor throughout.</td></tr>
-        <tr class="mark"><td class="t">10:30</td><td class="what">Hard switch</td><td>Building stops. Whatever works now is what you demo. Mentors sweep every table to enforce it — this is the single most useful moment of the day.</td></tr>
+        <tr><td class="t">09:10</td><td class="what">Build</td><td>A hundred minutes to close whatever is still open. Mentors on the floor throughout.</td></tr>
+        <tr class="mark"><td class="t">10:50</td><td class="what">Hard switch</td><td>Building stops. Whatever works now is what you demo. Mentors sweep every table to enforce it — this is the single most useful moment of the day.</td></tr>
         <tr class="phase"><td colspan="3">Phase 2 · Presentation build</td></tr>
-        <tr><td class="t">10:30</td><td class="what">Prepare</td><td>Sixty minutes. Structure the five minutes, rehearse it out loud at least twice, decide who says what.</td></tr>
-        <tr><td class="t">10:50</td><td class="what">Record your backup</td><td>Film the demo working, now, while it still is. Mentors will check you've done it.</td></tr>
-        <tr><td class="t">11:15</td><td class="what">Coffee</td><td>Rolling. Clock keeps running.</td></tr>
-        <tr class="mark"><td class="t">11:30</td><td class="what">Everything due</td><td>Team sheet, links, slides and recording submitted. Hands off keyboards.</td></tr>
-        <tr><td class="t">11:30</td><td class="what">Tech check</td><td>Twenty minutes. Test your laptop on the projector now, not during your presentation.</td></tr>
+        <tr><td class="t">10:50</td><td class="what">Prepare</td><td>Fifty-five minutes. Structure the five minutes, rehearse it out loud at least twice, decide who says what.</td></tr>
+        <tr><td class="t">11:10</td><td class="what">Record your backup</td><td>Film the demo working, now, while it still is. Mentors will check you've done it.</td></tr>
+        <tr><td class="t">11:35</td><td class="what">Coffee</td><td>Rolling. Clock keeps running.</td></tr>
+        <tr class="mark"><td class="t">11:45</td><td class="what">Everything due</td><td>Team sheet, links, slides and recording submitted. Hands off keyboards.</td></tr>
+        <tr><td class="t">11:45</td><td class="what">Tech check</td><td>Twenty minutes. Test your laptop on the projector now, not during your presentation.</td></tr>
         <tr class="phase"><td colspan="3">Phase 3 · Showcase</td></tr>
-        <tr><td class="t">11:50</td><td class="what">Presentations 1–5</td><td>Five minutes plus three minutes of questions. Timing enforced.</td></tr>
-        <tr><td class="t">12:30</td><td class="what">Break</td><td>Ten minutes. The jury needs it more than you do.</td></tr>
-        <tr><td class="t">12:40</td><td class="what">Presentations 6–10</td><td>Same format, in track order.</td></tr>
+        <tr><td class="t">12:05</td><td class="what">Presentations</td><td>Every group, in track order. Five minutes plus three minutes of questions. Timing enforced.</td></tr>
         <tr class="phase"><td colspan="3">Phase 4 · Decision</td></tr>
-        <tr><td class="t">13:20</td><td class="what">Deliberation</td><td>Twenty minutes. Lunch for you, arguing for the jury.</td></tr>
-        <tr><td class="t">13:40</td><td class="what">Awards &amp; close</td><td>The winner, the track certificates, photographs, and what happens next.</td></tr>
-        <tr><td class="t">14:00</td><td class="what">End</td><td></td></tr>
+        <tr><td class="t">13:10</td><td class="what">Deliberation</td><td>Twenty minutes. Lunch for you, arguing for the jury.</td></tr>
+        <tr><td class="t">13:30</td><td class="what">Awards &amp; close</td><td>The winner, the track certificates, photographs, and what happens next.</td></tr>
+        <tr><td class="t">13:50</td><td class="what">End</td><td></td></tr>
       </tbody>
     </table>
   </div>
@@ -982,10 +962,10 @@ footer.end { margin-top: 8mm; padding-top: 4mm; font-size: 7.6pt; }
   <span class="snum">Asked in advance</span>
   <h2>Questions</h2>
   <details><summary>Do we have to write code?</summary><p>No. You have to demonstrate something. A tested playbook, a designed flow, or a run tabletop exercise competes on equal terms with software — Track C in particular expects some of this. What you cannot do is describe an idea and call it a prototype.</p></details>
-  <details><summary>Can we just continue our working group project?</summary><p>Yes — that is the expected route, and most of you will. The whole project is judged, not only what you add during the hackathon week, so bring the strongest version of it. Nothing to declare, no baseline to measure.</p></details>
-  <details><summary>Can we switch tracks?</summary><p>Yes, until Thursday 18:00. After that the presentation order is fixed.</p></details>
-  <details><summary>Our project doesn't obviously fit any track.</summary><p>Check the topic table above first — every conference topic has a home there. If it still doesn't fit, tell us at the Tuesday session and we'll place it with you rather than making you bend the project.</p></details>
-  <details><summary>When are we supposed to build, with the conference running?</summary><p>Your own hours, in whatever time you have. That's why Saturday morning includes eighty minutes of finishing sprint, and why the scope rule applies to what you demo rather than to what you build. Nobody expects you to skip the conference.</p></details>
+  <details><summary>Do we need an idea before Thursday?</summary><p>Bring one if you can. Nothing is marked on it and nothing is submitted in advance, but ideas are what teams form around at the kick-off — so the more people arrive with something, the better the teams are. If you turn up without one, you'll join someone else's, which is a perfectly good way to do this.</p></details>
+  <details><summary>Can we switch tracks?</summary><p>Yes, up to the start of the Exchange on Friday. After that the presentation order is fixed.</p></details>
+  <details><summary>Our idea doesn't obviously fit any track.</summary><p>Check the topic table above first — every conference topic has a home there. If it still doesn't fit, tell us at the Thursday session and we'll place it with you rather than making you bend the idea.</p></details>
+  <details><summary>When are we supposed to build, with the conference running?</summary><p>Your own hours, in whatever time you have across Thursday and Friday. That's why Saturday morning opens with a hundred minutes of finishing sprint, and why the scope rule is one capability rather than a system. Nobody expects you to skip the conference.</p></details>
   <details><summary>What if the demo breaks during our presentation?</summary><p>Play the backup recording and keep talking. Judges have seen live demos fail since the invention of live demos; the recording costs you nothing. Not having one costs you your Implementation score.</p></details>
   <details><summary>Is the Exchange compulsory?</summary><p>Expected, not scored. Nobody loses points for missing it — you just lose the answers, and the chance at the Best Collaborators certificate.</p></details>
 </section>
